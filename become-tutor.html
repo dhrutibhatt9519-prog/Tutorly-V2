@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorly | Become a Tutor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="become-tutor">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Tutorly home">
+        <img src="assets/tutorly_logo.png" alt="Tutorly logo">
+      </a>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="tutors.html">Tutors</a>
+        <a href="become-tutor.html" class="is-active">Become a Tutor</a>
+        <a href="favourites.html">Favourites</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="become-hero">
+      <div class="shell become-hero-inner reveal">
+        <div>
+          <h1>Join Tutorly</h1>
+          <p>Share your expertise with students who need the right guide. Build a polished profile, highlight your specialties, and connect with families looking for trusted subject experts.</p>
+        </div>
+      </div>
+    </section>
+    <!-- APPLICATION FORM -->
+    <section class="section become-section">
+      <div class="shell become-layout">
+        <div class="become-copy reveal">
+          <div class="section-heading align-left">
+            <span class="section-accent"></span>
+            <p class="eyebrow">Application process</p>
+            <h2>What we look for</h2>
+          </div>
+          <div class="criteria-list">
+            <article class="paper-card"><h3>Subject depth</h3><p>Show clear expertise in your core subjects, curriculum familiarity, and teaching outcomes.</p></article>
+            <article class="paper-card"><h3>Communication skills</h3><p>We prioritize tutors who explain complex topics clearly and can adapt to different learners.</p></article>
+            <article class="paper-card"><h3>Reliable availability</h3><p>Students need dependable scheduling, fast replies, and consistent session planning.</p></article>
+          </div>
+        </div>
+        <form id="become-tutor-form" class="apply-card reveal">
+          <h2>Become a Tutor</h2>
+          <p>Tell us about your teaching background and we'll review your profile.</p>
+          <div class="form-grid">
+            <div class="field-group"><label for="apply-name">Full Name</label><input id="apply-name" name="name" type="text" placeholder="Jane Doe" required></div>
+            <div class="field-group"><label for="apply-email">Email Address</label><input id="apply-email" name="email" type="email" placeholder="jane@example.com" required></div>
+            <div class="field-group"><label for="apply-phone">Phone Number</label><input id="apply-phone" name="phone" type="tel" placeholder="(555) 123-4567" required></div>
+            <div class="field-group"><label for="apply-location">Location</label><input id="apply-location" name="location" type="text" placeholder="Waterloo" required></div>
+            <div class="field-group"><label for="apply-subject">Primary Subject</label><input id="apply-subject" name="subject" type="text" placeholder="Mathematics" required></div>
+            <div class="field-group"><label for="apply-experience">Years of Experience</label><input id="apply-experience" name="experience" type="number" min="0" placeholder="5" required></div>
+          </div>
+          <div class="field-group"><label for="apply-bio">Professional Summary</label><textarea id="apply-bio" name="bio" rows="5" placeholder="Share your teaching approach, credentials, and specialties." required></textarea></div>
+          <div class="field-group"><label for="apply-availability">Availability</label><select id="apply-availability" name="availability" required><option value="">Select availability</option><option>Weekdays</option><option>Evenings</option><option>Weekends</option><option>Flexible</option></select></div>
+          <button class="button button-primary" type="submit">Submit Application</button>
+          <p id="apply-form-message" class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <a class="brand footer-brand" href="index.html"><span>Tutorly</span></a>
+      <p>Empowering students through exceptional education</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+

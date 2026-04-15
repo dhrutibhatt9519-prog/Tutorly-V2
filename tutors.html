@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorly | Browse Tutors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="tutors">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Tutorly home">
+        <img src="assets/tutorly_logo.png" alt="Tutorly logo">
+      </a>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="tutors.html" class="is-active">Tutors</a>
+        <a href="become-tutor.html">Become a Tutor</a>
+        <a href="favourites.html">Favourites</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="directory-page-hero">
+      <div class="shell reveal">
+        <p class="eyebrow">Tutor marketplace</p>
+        <h1>Find the right tutor faster.</h1>
+        <p>Filter by subject, location, availability, and budget while keeping every tutor pin visible on the map.</p>
+      </div>
+    </section>
+    <!-- TUTOR DIRECTORY -->
+    <section class="section directory-section">
+      <div class="shell">
+        <div class="directory-header reveal">
+          <div>
+            <p class="eyebrow">Available now</p>
+            <h2>Available Tutors</h2>
+            <p id="results-copy">Loading tutors...</p>
+          </div>
+        </div>
+        <div class="map-shell reveal">
+          <div class="map-label">Tutor Locations</div>
+          <div id="directory-map" class="directory-map"></div>
+        </div>
+        <div class="directory-layout">
+          <aside class="filter-panel reveal">
+            <div class="filter-header">
+              <h3>Filters</h3>
+              <button id="reset-filters" class="filter-reset" type="button">Reset</button>
+            </div>
+            <div class="mobile-filter-grid">
+              <div class="field-group"><label for="mobile-subject">Subject</label><select id="mobile-subject"><option value="">All subjects</option></select></div>
+              <div class="field-group"><label for="mobile-location">Location</label><select id="mobile-location"><option value="">All locations</option></select></div>
+              <div class="field-group"><label for="mobile-availability">Availability</label><select id="mobile-availability"><option value="">Any day</option></select></div>
+            </div>
+            <div class="field-group">
+              <label for="directory-search">Search</label>
+              <input id="directory-search" type="search" placeholder="Search tutors">
+            </div>
+            <div class="filter-group desktop-only"><h4>Subjects</h4><div id="subject-filters" class="checkbox-list"></div></div>
+            <div class="filter-group desktop-only"><h4>Location</h4><div id="location-filters" class="checkbox-list"></div></div>
+            <div class="filter-group desktop-only"><h4>Availability</h4><div id="availability-filters" class="chip-list"></div></div>
+            <div class="filter-group">
+              <div class="price-row"><h4>Price Range</h4><span id="price-output">$150/hr max</span></div>
+              <input id="price-range" type="range" min="40" max="150" step="5" value="150">
+            </div>
+          </aside>
+          <div class="directory-results">
+            <div id="tutor-list" class="tutor-grid reveal"></div>
+            <div id="empty-state" class="empty-state hidden">
+              <h3>No tutors match these filters yet.</h3>
+              <p>Try resetting the filters or choosing a broader subject or price range.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <a class="brand footer-brand" href="index.html"><span>Tutorly</span></a>
+      <p>Empowering students through exceptional education</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

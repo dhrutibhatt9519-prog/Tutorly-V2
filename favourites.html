@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorly | Favourite Tutors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="favourites">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Tutorly home">
+        <img src="assets/tutorly_logo.png" alt="Tutorly logo">
+      </a>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="tutors.html">Tutors</a>
+        <a href="become-tutor.html">Become a Tutor</a>
+        <a href="favourites.html" class="is-active">Favourites</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="directory-page-hero favourites-hero">
+      <div class="shell reveal">
+        <p class="eyebrow">Saved tutors</p>
+        <h1>Your favourite tutors in one place.</h1>
+        <p>Come back to the tutors you liked most and jump straight into their full profiles.</p>
+      </div>
+    </section>
+    <!-- FAVOURITES -->
+    <section class="section favourites-section">
+      <div class="shell">
+        <div id="fav-list" class="tutor-grid reveal"></div>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <a class="brand footer-brand" href="index.html"><span>Tutorly</span></a>
+      <p>Empowering students through exceptional education</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
