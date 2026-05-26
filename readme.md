@@ -21,6 +21,20 @@ Tutorly is a React tutor discovery application for browsing tutors, filtering by
 - Styling composed with Tailwind utility classes in React components
 - `src/tailwind.css` contains only Tailwind entry directives
 
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+```
+
+Navigate to the project folder:
+
+```
+cd your-repo-name
+```
+
 ## Development
 
 ```bash
