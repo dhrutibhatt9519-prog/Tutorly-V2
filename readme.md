@@ -36,6 +36,17 @@ Open `http://127.0.0.1:5173/`.
 npm run build
 ```
 
+## 🌐 Live Demo
+
+🚀 View the deployed project here:  
+[Live Website](https://tutorly-v2.vercel.app/)
+
+---
+
+### Deployment
+
+This project is deployed using [Vercel](https://vercel.com/).
+
 ## Project Structure
 
 ```text
