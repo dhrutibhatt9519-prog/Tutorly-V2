@@ -44,11 +44,6 @@ npm run dev
 
 Open `http://127.0.0.1:5173/`.
 
-## Build
-
-```bash
-npm run build
-```
 
 ## 🌐 Live Demo
 
